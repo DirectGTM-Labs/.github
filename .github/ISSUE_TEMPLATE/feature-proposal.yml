@@ -1,0 +1,22 @@
+name: Feature proposal
+description: Propose a focused improvement tied to an actual use case.
+title: '[Proposal]: '
+body:
+  - type: textarea
+    id: use_case
+    attributes:
+      label: User and problem
+      description: Identify who benefits and the concrete problem they have.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change and acceptance criterion
+      description: Explain what success would look like and how it could be verified.
+    validations:
+      required: true
+  - type: textarea
+    id: tradeoffs
+    attributes:
+      label: Evidence, alternatives and limitations
