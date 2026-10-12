@@ -1,0 +1,24 @@
+name: Evidence correction
+description: Correct a definition, source, assumption, measurement or unsupported claim.
+title: '[Evidence]: '
+body:
+  - type: input
+    id: affected
+    attributes:
+      label: Affected file or claim
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: Proposed correction
+      description: Distinguish observation, inference and uncertainty.
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Evidence and sources
+      description: Prefer primary sources or reproducible observations. An LLM output alone is not evidence.
+    validations:
+      required: true

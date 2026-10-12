@@ -1,0 +1,23 @@
+name: Bug report
+description: Report a reproducible problem in code, data processing or documentation.
+title: '[Bug]: '
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem and expected behaviour
+      description: Explain the concrete trigger, actual result and expected result.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction
+      description: Include commands, environment and commit or version. Use synthetic data.
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Actual output
+      description: Include a minimal relevant excerpt with private information removed.
